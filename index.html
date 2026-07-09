@@ -10,32 +10,37 @@
     
     <style>
         body {
-            background-color: #eaeeef;
+            background-color: #f4f4f4;
             font-family: Arial, sans-serif;
+            text-align:center ;
             padding: 20px;
         }
         h1 {
-            color: #22161b;
+            color: #ed4a04;
         }
         h2 {
-            color: hsl(336, 15%, 13%);
+        color: hsl(336, 15%, 13%);
         }
         button {
-            background-color: #2ecc71;
-            color: white;
-            padding: 10px 15px;
+            background-color: #cf2b01;
+            color: rgb(26, 7, 7);
+            padding: 12px 30px;
+            font: size 18px;
             border: none;
-            border-radius: 5px;
+            border-radius: 25px;
             cursor: pointer;
+        }
+        .buy-btn:hover {
+            background-color: #e60000;
         }
         img {
             border-radius: 12px;
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0px 4px 8px rgba(241, 1, 1, 0.1);
             margin-bottom: 20px;
         }
         input {
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid #f2caca;
             border-radius: 5px;
             width: 250px;
             display: block;
@@ -59,6 +64,27 @@
                 height: auto;
             }
         }
+        .product-img {
+            width:100%;
+            max-width: 400px;
+            height:auto;
+            display:block;
+            margin:20px auto;
+            border-radius:15px;
+            box-shadow: 0 4px 8px rgb(0, 0, 0.1);
+        }
+        input[type="text"] {
+            padding:10px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            display:inline-block;
+        }
+        ul {
+            list-style-position: inside;
+            padding:0;
+        }
     </style>
 </head>
 <body>
@@ -74,9 +100,9 @@
     </ul>
 
     <a href="https://www.youtube.com" target="_blank">YouTube Open Karein</a>
-    <img src="https://i.pinimg.com/736x/98/f8/d5/98f8d52969fe6ef0a0322cf0b5af3965.jpg" alt="Best mate lipstics for Summar" width="400">
+    <img src="https://i.pinimg.com/736x/98/f8/d5/98f8d52969fe6ef0a0322cf0b5af3965.jpg" class="product-img" alt="Best mate lipstics for Summar" width="400">
     <br><br>
-    <button>Shop Now</button>
+    <button class="Buy-btn">Shop Now</button>
     <p>Apna Naam Likhein:</p>
     <input type="text" placeholder="Yahan apna naam likhein">
     <button>Submit Karein</button>
