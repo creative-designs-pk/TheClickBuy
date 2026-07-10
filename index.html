@@ -3,109 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bring a touch of wildlife into your home with this adorable panda-themed refrigerator. Designed to look like a friendly panda, this unique fridge is perfect for animal lovers and modern kitchens. The open door reveals neatly organized fresh fruits, vibrant veggies, and healthy juices.
-">
-    <title>Cute Panda Bear Refrigerator Design | Creative Kitchen Decor
-</title>
-    
+    <title>Cute Panda Bear Refrigerator Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Poori website ki basic styling */
         body {
-            background-color: #f4f4f4;
-            font-family: Arial, sans-serif;
-            text-align:center ;
-            padding: 20px;
-        }
-        h1 {
-            color: #ed4a04;
-        }
-        h2 {
-        color: hsl(336, 15%, 13%);
-        }
-        button {
-            background-color: #cf2b01;
-            color: rgb(26, 7, 7);
-            padding: 12px 30px;
-            font: size 18px;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-        }
-        .buy-btn:hover {
-            background-color: #e60000;
-        }
-        img {
-            border-radius: 12px;
-            box-shadow: 0px 4px 8px rgba(241, 1, 1, 0.1);
-            margin-bottom: 20px;
-        }
-        input {
-            padding: 10px;
-            border: 1px solid #f2caca;
-            border-radius: 5px;
-            width: 250px;
-            display: block;
-            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f9f9f9;
         }
 
-        /* Mobile Responsive Code */
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            h1 {
-                font-size: 24px;
-            }
-            input {
-                width: 100%;
-                box-sizing: border-box;
-            }
-            img {
-                width: 100%;
-                height: auto;
-            }
+        /* Navigation Bar ki styling */
+        .navbar {
+    background: #333333 !important; /* Is se background laazmi kaala (dark grey) ho jayega */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+        .logo {
+            color: rgb(236, 119, 29);
+            font-size: 24px;
+            font-weight: bold;
         }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: #ffffff !important;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            color: #ff4500;
+        }
+
+        /* Content Area ki styling */
+        .content {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff4500;
+            margin-top: 30px;
+        }
+
+        p {
+            color: #555;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        /* Bullet points ki styling (jo pehle theek ki thi) */
+        ul.points {
+            list-style-position: inside;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .points li {
+            color: #333;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        a.youtube-link {
+            color: #0066cc;
+            text-decoration: underline;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* Image ki styling */
         .product-img {
-            width:100%;
-            max-width: 400px;
-            height:auto;
-            display:block;
-            margin:20px auto;
-            border-radius:15px;
-            box-shadow: 0 4px 8px rgb(0, 0, 0.1);
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
+
+        /* Form aur Buttons ki styling */
+        .shop-btn {
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+
+        .form-section {
+            margin: 30px 0;
+        }
+
         input[type="text"] {
-            padding:10px;
+            padding: 10px;
             width: 250px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            margin-bottom: 15px;
-            display:inline-block;
+            margin-right: 10px;
         }
-        ul {
-            list-style-position: inside;
-            padding:0;
+
+        .submit-btn {
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
         }
+
+        /* Footer ki styling */
+        .site-footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        /* Yeh main box hai jo sab ko ek line mein layega */
+.product-container {
+    display: flex;            /* Yeh likhne se andar ke saare boxes ek line mein aa jate hain */
+    justify-content: center;   /* Saare boxes ko center mein karne ke liye */
+    gap: 20px;                /* Boxes ke darmiyan ka fasla (space) */
+    padding: 20px;
+}
+
+/* Yeh har ek alag product box ki styling hai */
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+/* Product card ke andar ki image ko set karne ke liye */
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Is se image box ke andar sahi fit baithti hai */
+    border-radius: 8px;
+}
+
+/* 🌟 Hover Effect: Jab mouse card par aaye */
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation ko smooth banane ke liye */
+}
+
+.product-card:hover {
+    transform: translateY(-10px); /* Card ko 10 pixel upar uthaye ga */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15); /* Shadow ko thoda gehra kare ga */
+    border-color: #ff4500; /* Border ka rang badal dega */
+}
+/* Jab screen ka size 768px se chota hoga (jaise mobile aur tablets) */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column; /* Boxes ek line ke bajaye ek ke neeche ek aa jayenge */
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column; /* Header ke links aur logo bhi mobile par center ho jayenge */
+        gap: 10px;
+    }
+
+    .nav-links {
+        padding: 0;
+    }
+}
     </style>
 </head>
 <body>
 
-    <h1>Cute Panda Bear Refrigerator Design | Creative Kitchen Decor
-</h1>
-    <p>Bring a touch of wildlife into your home with this adorable panda-themed refrigerator. Designed to look like a friendly panda, this unique fridge is perfect for animal lovers and modern kitchens. The open door reveals neatly organized fresh fruits, vibrant veggies, and healthy juices.
-</p>
-    <ul>
-        <li>adobrable</li>
-        <li>panda theme</li>
-        <li>good quality</li>
-    </ul>
+    <!-- 1. Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">TheClickBuy</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <a href="https://www.youtube.com" target="_blank">YouTube Open Karein</a>
-    <img src="https://i.pinimg.com/736x/98/f8/d5/98f8d52969fe6ef0a0322cf0b5af3965.jpg" class="product-img" alt="Best mate lipstics for Summar" width="400">
-    <br><br>
-    <button class="Buy-btn">Shop Now</button>
-    <p>Apna Naam Likhein:</p>
-    <input type="text" placeholder="Yahan apna naam likhein">
-    <button>Submit Karein</button>
+    <!-- 2. Main Content -->
+    <div class="content">
+        <h1>Cute Panda Bear Refrigerator Design | Creative Kitchen Decor</h1>
+        
+        <p>Bring a touch of wildlife into your home with this adorable panda-themed refrigerator. Designed to look like a friendly panda, this unique fridge is perfect for animal lovers and modern kitchens. The open door reveals neatly organized fresh fruits, vibrant veggies, and healthy juices.</p>
+
+        <ul class="points">
+            <li>adorable</li>
+            <li>panda theme</li>
+            <li>good quality</li>
+        </ul>
+
+        <a class="youtube-link" href="https://youtube.com" target="_blank">YouTube Open Karein</a>
+
+        <!-- Aapki Image (Rakhye ga ke image file ka naam yahi ho ya change kar lein) -->
+        <img class="product-img" src="https://i.pinimg.com/736x/98/f8/d5/98f8d52969fe6ef0a0322cf0b5af3965.jpg" alt="Panda Refrigerator">
+
+        <button class="shop-btn">Shop Now</button>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <label style="display: block; margin-bottom: 10px;">Apna Naam Likhein:</label>
+            <input type="text" placeholder="Yahan apna naam likhein">
+            <button class="submit-btn">Submit Karein</button>
+        <h2 style="margin-top: 50px; color: #333;">Our Featured Products</h2>
+<div class="product-container">
+    <div class="product-card">
+        <img src="https://i.pinimg.com/736x/9f/e9/15/9fe9154f503dc3bd6378951d2dbb361c.jpg" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Premium Quality Item</p>
+    </div>
+    <div class="product-card">
+        <img src="https://i.pinimg.com/736x/a2/a5/72/a2a5729601901d26549141de9dd2203c.jpg" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>Best Seller Design</p>
+    </div>
+    <div class="product-card">
+        <img src="https://i.pinimg.com/736x/52/23/99/5223998577f6c288af94967bdb037789.jpg" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>New Arrival Stock</p>
+    </div>
+</div>
+
+    <!-- 3. Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 TheClickBuy. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
